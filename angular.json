@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/Resume_NicolasCastillo_Frontend_Angular/",
             "outputPath": "dist/resume-nicolas-castillo-frontend-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",

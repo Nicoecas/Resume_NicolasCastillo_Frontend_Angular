@@ -24,7 +24,8 @@ export class ContactComponent {
     private fb: FormBuilder
   ) {
     this.contactForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
+      emailFrom: ['', [Validators.required, Validators.email]],
+      name: ['', Validators.required],
       subject: ['', Validators.required],
       message: ['', [Validators.required, Validators.minLength(10)]],
     });
@@ -33,7 +34,8 @@ export class ContactComponent {
   onSubmit(): void {
     if (this.contactForm.valid) {
       const formData: SendMail = {
-        email: this.contactForm.value.email,
+        emailFrom: this.contactForm.value.emailFrom,
+        name: this.contactForm.value.name,
         subject: this.contactForm.value.subject,
         body: this.contactForm.value.message,
       };

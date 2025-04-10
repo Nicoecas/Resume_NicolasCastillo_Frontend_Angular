@@ -2,24 +2,45 @@
   <h2>Contacto</h2>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div>
-      <!--<label for="email">Correo electrónico:</label>
+      <label for="emailFrom">Correo electrónico:</label>
       <input
-        id="email"
-        type="email"
-        formControlName="email"
+        id="emailFrom"
+        type="emailFrom"
+        formControlName="emailFrom"
         placeholder="Ejemplo: usuario@example.com"
       />
       <div
         *ngIf="
-          contactForm.get('email')?.invalid && contactForm.get('email')?.touched
+          contactForm.get('emailFrom')?.invalid &&
+          contactForm.get('emailFrom')?.touched
         "
         class="error"
       >
-        <small *ngIf="contactForm.get('email')?.errors?.['required']"
+        <small *ngIf="contactForm.get('emailFrom')?.errors?.['required']"
           >El correo es obligatorio.</small
         >
-        <small *ngIf="contactForm.get('email')?.errors?.['email']"
+        <small *ngIf="contactForm.get('emailFrom')?.errors?.['emailFrom']"
           >Ingrese un correo válido.</small
+        >
+      </div>
+    </div>
+
+    <div>
+      <label for="name">Nombre:</label>
+      <input
+        id="name"
+        type="name"
+        formControlName="name"
+        placeholder="Ejemplo: Carlos"
+      />
+      <div
+        *ngIf="
+          contactForm.get('name')?.invalid && contactForm.get('name')?.touched
+        "
+        class="error"
+      >
+        <small *ngIf="contactForm.get('name')?.errors?.['required']"
+          >El Nombre es obligatorio.</small
         >
       </div>
     </div>
@@ -67,22 +88,21 @@
     </div>
 
     <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
-  </form>-->
-      <div>
-        Contacto: nicoecas.96&#64;gmail.com<br />
-        Backend:
-        <a
-          href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
-          target="”_blank”"
-          >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
-        ><br />
-        Frontend:
-        <a
-          href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
-          target="”_blank”"
-          >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
-        ><br />
-      </div>
-    </div>
   </form>
+  <br />
+  <div>
+    Contacto: nicoecas.96&#64;gmail.com<br />
+    Backend:
+    <a
+      href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
+      target="”_blank”"
+      >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
+    ><br />
+    Frontend:
+    <a
+      href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
+      target="”_blank”"
+      >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
+    ><br />
+  </div>
 </div>

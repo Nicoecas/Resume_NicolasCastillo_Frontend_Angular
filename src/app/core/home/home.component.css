@@ -1,0 +1,27 @@
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: medium;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 1rem; 
+}
+
+.home {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  height: 100vh;
+  padding: 20px; 
+}

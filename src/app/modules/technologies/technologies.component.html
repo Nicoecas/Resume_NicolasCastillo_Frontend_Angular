@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Tecnologías Aplicadas</h1>
+    </div>
+  </div>
+  <div *ngFor="let group of groupedTechnologies">
+    <h4 (click)="toggleCategory(group.typeName)" style="cursor: pointer">
+      <span>
+        {{ expandedCategories[group.typeName] ? "-" : "+" }}
+      </span>
+      {{ group.typeName }}
+    </h4>
+
+    <ul *ngIf="expandedCategories[group.typeName]">
+      <li *ngFor="let tech of group.technologies">
+        - {{ tech.technologyName }} {{ tech.description }}
+      </li>
+    </ul>
+  </div>
+</div>

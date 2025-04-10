@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+.content {
+    margin-left: 10%;
+    transition: margin-left 0.3s;
+    padding: 20px;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 1rem;
+  }
+
+  .content.sidebar-collapsed {
+    margin-left: 40px; 
+  }
+
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem; 
+  line-height: 1.6;
+}

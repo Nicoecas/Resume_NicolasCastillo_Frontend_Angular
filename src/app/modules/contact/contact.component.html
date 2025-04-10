@@ -1,0 +1,88 @@
+<div class="container">
+  <h2>Contacto</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div>
+      <!--<label for="email">Correo electrónico:</label>
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        placeholder="Ejemplo: usuario@example.com"
+      />
+      <div
+        *ngIf="
+          contactForm.get('email')?.invalid && contactForm.get('email')?.touched
+        "
+        class="error"
+      >
+        <small *ngIf="contactForm.get('email')?.errors?.['required']"
+          >El correo es obligatorio.</small
+        >
+        <small *ngIf="contactForm.get('email')?.errors?.['email']"
+          >Ingrese un correo válido.</small
+        >
+      </div>
+    </div>
+
+    <div>
+      <label for="subject">Motivo:</label>
+      <input
+        id="subject"
+        type="text"
+        formControlName="subject"
+        placeholder="Ejemplo: Consulta sobre servicios"
+      />
+      <div
+        *ngIf="
+          contactForm.get('subject')?.invalid &&
+          contactForm.get('subject')?.touched
+        "
+        class="error"
+      >
+        <small>El motivo es obligatorio.</small>
+      </div>
+    </div>
+
+    <div>
+      <label for="message">Mensaje:</label>
+      <textarea
+        id="message"
+        formControlName="message"
+        placeholder="Escriba su mensaje aquí..."
+      ></textarea>
+      <div
+        *ngIf="
+          contactForm.get('message')?.invalid &&
+          contactForm.get('message')?.touched
+        "
+        class="error"
+      >
+        <small *ngIf="contactForm.get('message')?.errors?.['required']"
+          >El mensaje es obligatorio.</small
+        >
+        <small *ngIf="contactForm.get('message')?.errors?.['minlength']">
+          El mensaje debe tener al menos 10 caracteres.
+        </small>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+  </form>-->
+      <div>
+        Contacto: nicoecas.96&#64;gmail.com<br />
+        Backend:
+        <a
+          href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
+          target="”_blank”"
+          >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
+        ><br />
+        Frontend:
+        <a
+          href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
+          target="”_blank”"
+          >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
+        ><br />
+      </div>
+    </div>
+  </form>
+</div>

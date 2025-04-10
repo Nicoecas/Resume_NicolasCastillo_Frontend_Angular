@@ -1,0 +1,53 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: black;
+    color: white;
+    transition: width 0.3s;
+    overflow: hidden;
+  }
+  
+  .sidebar.collapsed {
+    width: 40px;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu-item i {
+    font-size: medium;
+    margin-right: 10px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .menu-item a:hover {
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+  }

@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Educación</h1>
+    </div>
+  </div>
+  <div *ngFor="let education of educations">
+    <div class="row">
+      <div>
+        <strong>{{ education.degree }}</strong>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        {{ education.institution }} / {{ education.startDate }} -
+        {{ endData(education.finalized, education.endDate) }}
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Certificación</h1>
+    </div>
+  </div>
+  <div *ngFor="let certification of certifications">
+    <div class="row">
+      <div>
+        <strong>{{ certification.name }}</strong>
+      </div>
+    </div>
+    <div class="row">
+      <div>{{ certification.institution }} / {{ certification.year }}</div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Lenguajes</h1>
+    </div>
+  </div>
+  <div *ngFor="let language of languages">
+    <div class="row">
+      <div>
+        <strong>{{ language.name }}</strong
+        >: {{ language.levelDescription }}
+      </div>
+    </div>
+  </div>
+</div>

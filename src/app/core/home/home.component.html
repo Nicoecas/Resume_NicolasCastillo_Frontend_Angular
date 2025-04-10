@@ -1,0 +1,34 @@
+<div class="home">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>{{ profileMain.title }}</h1>
+      <h1>{{ profileMain.name }} {{ profileMain.surname }}</h1>
+    </div>
+  </div>
+  <br />
+  <div class="row mt-4">
+    <div class="col-6">
+      <img [src]="logoUrl" alt="Foto de perfil" class="img-fluid" />
+    </div>
+    <div class="col-6">
+      <div *ngFor="let paragraph of paragraphs">
+        <p>{{ paragraph }}</p>
+      </div>
+      <div>
+        Contacto: nicoecas.96&#64;gmail.com<br />
+        Backend:
+        <a
+          href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
+          target="”_blank”"
+          >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
+        ><br />
+        Frontend:
+        <a
+          href="https://github.com/Nicoecas/Resume_NicolasCastillo_Backend"
+          target="”_blank”"
+          >https://github.com/Nicoecas/Resume_NicolasCastillo_Backend</a
+        ><br />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Experiencia Laboral</h1>
+    </div>
+  </div>
+  <div *ngFor="let experience of workExperiences">
+    <div class="row">
+      <div class="col-6">
+        <h4 (click)="toggleCategory(experience.id)" style="cursor: pointer">
+          <span>
+            {{ expandedCategories[experience.id] ? "-" : "+" }}
+          </span>
+          {{ experience.company }}
+        </h4>
+      </div>
+      <div class="col-6" style="text-align: right">
+        {{ formatDate(experience.startDate) }} -
+        {{ formatDate(experience.endDate) }}
+      </div>
+    </div>
+
+    <ul *ngIf="expandedCategories[experience.id]">
+      <li>
+        <i>{{ experience.role }}</i>
+      </li>
+      <li><strong>Descripción:</strong> {{ experience.description }}</li>
+    </ul>
+    <hr />
+  </div>
+</div>

@@ -1,0 +1,27 @@
+h4 {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  h4 span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin: 5px 0;
+    text-align: justify;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem; 
+  }
